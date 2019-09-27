@@ -1,0 +1,127 @@
+body{
+    /*background: linear-gradient(135deg,#A9E2F3, #A9F5F2,#A9F5E1,#A9E2F3);*/
+	background-color:#98BFEA;
+}
+
+img{
+	
+	 border-radius: 1250px; 
+	 width:250PX; 
+	 height:250px; 
+	
+ }
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	font-family: 'Be Vietnam', sans-serif;
+}
+/* Conteiner */
+
+.container{
+  margin-top:10px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+
+/* linha */
+.row{
+  margin-left: -10px;
+  margin-right: -10px;
+
+}
+
+.row:before, 
+.row:after{
+  content: "" ;
+  display: table;
+}
+
+.row:after{
+  clear: both;
+}
+
+/* Colunas */
+.col{
+  display: inline-block;
+  vertical-align: top;
+  min-width: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  margin-right: -2px;
+  *zoom: 1;
+  *display: inline;
+  margin-top: 10px;
+}
+
+.col-content, .row{
+    padding: 5px;
+}
+
+.detalhes{
+	width: 100%;
+	text-align: center;
+}
+.teste{
+  background-color: #e4f0fd;
+  padding: 5px;
+  margin: 4px 0;
+  color: #2E6AB0;
+  margin-bottom:15px;
+}
+
+.teste, .detalhes{
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.barrinha{
+  width: 90%;
+  height: 15px;
+  border-radius: 10px;
+  margin:5px;
+  background-color: #bcb9b9;
+  text-align: center;
+  color: #fff;
+}
+
+.col-sidebar{
+    text-align:center;
+  }
+
+/* tres colunas */
+
+@media(min-width: 992px){
+  .col-3{
+    width: 33.25%;
+  }
+}
+
+@media(min-width: 992px){
+  .col-content{
+    width: 70%;
+  }
+
+  .col-sidebar{
+    width: 30%;
+  }
+}
+
+@media(max-width: 540px){
+	.container{
+		width:98%;
+	}
+	img{
+		width:240px;
+		height:240px;
+	}
+}
